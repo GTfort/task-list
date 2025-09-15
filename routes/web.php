@@ -35,3 +35,10 @@ Route::get('/tasks/{id}', function ($id) {
 
     return view('show', ['task' => $task]);
 })->name('show.task');
+
+Route::get('/tasks/{id}/edit', function ($id) {
+    $task = Task::findOrFail($id);
+
+
+    return view('edit', ['task' => $task]);
+})->name('edit.task');
