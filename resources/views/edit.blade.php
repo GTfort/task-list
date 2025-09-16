@@ -12,12 +12,12 @@
 
         <div>
             <label for="description">Short Description:</label>
-            <textarea value="{{ $task->description }}" name="description" id="description" required></textarea>
+            <textarea  name="description" id="description" required>{{ $task->description }}</textarea>
         </div>
 
         <div>
             <label for="long_description">Long Description (optional):</label>
-            <textarea value="{{ $task->long_description }}" name="long_description" id="long_description"></textarea>
+            <textarea  name="long_description" id="long_description"> {{ $task->long_description }}</textarea>
         </div>
 
         <div>
